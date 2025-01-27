@@ -1,0 +1,255 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innovación Empresarial</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav-container">
+      <a href="#" class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        InnovaEmp
+      </a>
+      
+      <button class="mobile-menu-btn" aria-label="Menú" aria-expanded="false">
+        <svg class="mobile-menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M3 12h18M3 6h18M3 18h18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+        <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-background">
+      <svg class="background-pattern" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <defs>
+          <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(218, 165, 32, 0.1)" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+        <rect width="100" height="100" fill="#0a192f"/>
+        <rect width="100" height="100" fill="url(#grid)"/>
+      </svg>
+    </div>
+    
+    <div class="content">
+      <h1 class="title">Innovación y excelencia para tu negocio</h1>
+      <p class="subtitle">Soluciones personalizadas para empresas modernas</p>
+      <a href="https://ejemplo.com/contacto" class="cta-button">Contáctanos ahora</a>
+    </div>
+  </section>
+  
+  <section id="nosotros" class="about">
+    <h2 class="about-title">Sobre Nosotros</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="icon-container">
+          <svg class="about-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Nuestra Misión</h3>
+        <p>Transformamos el panorama empresarial mediante soluciones innovadoras y personalizadas que impulsan el crecimiento sostenible de nuestros clientes. Nos dedicamos a crear valor real y medible en cada proyecto.</p>
+      </div>
+      
+      <div class="about-card">
+        <div class="icon-container">
+          <svg class="about-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15 12l-6-6v12l6-6z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Nuestra Visión</h3>
+        <p>Aspiramos a ser líderes reconocidos en la transformación digital empresarial, estableciendo nuevos estándares de excelencia e innovación en el mercado español, siempre manteniendo nuestro compromiso con la calidad.</p>
+      </div>
+      
+      <div class="about-card">
+        <div class="icon-container">
+          <svg class="about-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c.26.604.852.997 1.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Nuestros Valores</h3>
+        <p>Integridad, excelencia y compromiso son los pilares fundamentales de nuestra empresa. Creemos en construir relaciones duraderas basadas en la confianza y en ofrecer resultados excepcionales en cada proyecto.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="servicios" class="services">
+    <h2 class="services-title">Nuestros Servicios</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M9 12l2 2 4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Consultoría</h3>
+        <p>Asesoramiento estratégico personalizado para optimizar tus procesos empresariales y maximizar el rendimiento de tu organización.</p>
+      </div>
+      
+      <div class="service-card">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M12 19l7-7 3 3-7 7-3-3z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 2l7.586 7.586" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M11 11l-4 4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Desarrollo Web</h3>
+        <p>Creación de sitios web modernos y aplicaciones personalizadas que potencian tu presencia digital y mejoran la experiencia de tus usuarios.</p>
+      </div>
+      
+      <div class="service-card">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="2" y="9" width="4" height="12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="4" cy="4" r="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Marketing Digital</h3>
+        <p>Estrategias efectivas de marketing online para aumentar tu visibilidad, atraer clientes cualificados y potenciar tus ventas.</p>
+      </div>
+      
+      <div class="service-card">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Asesoría Financiera</h3>
+        <p>Orientación experta para la gestión financiera de tu empresa, optimización de recursos y planificación estratégica del crecimiento.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="testimonios" class="testimonials">
+    <h2 class="testimonials-title">Lo que dicen nuestros clientes</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-avatar">
+          ML
+        </div>
+        <div class="testimonial-content">
+          <p class="testimonial-text">Su equipo demostró un nivel excepcional de profesionalismo y compromiso. Los resultados superaron todas nuestras expectativas.</p>
+          <h3 class="testimonial-author">María López</h3>
+          <p class="testimonial-position">Directora General, TechStart</p>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-avatar">
+          JR
+        </div>
+        <div class="testimonial-content">
+          <p class="testimonial-text">La transformación digital de nuestra empresa fue un éxito gracias a su experiencia y dedicación. Altamente recomendable.</p>
+          <h3 class="testimonial-author">Javier Rodríguez</h3>
+          <p class="testimonial-position">CEO, Innova Plus</p>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-avatar">
+          AS
+        </div>
+        <div class="testimonial-content">
+          <p class="testimonial-text">Un servicio impecable y resultados tangibles. Su enfoque estratégico nos ayudó a alcanzar nuevos niveles de crecimiento.</p>
+          <h3 class="testimonial-author">Ana Sánchez</h3>
+          <p class="testimonial-position">Directora de Marketing, GlobalTech</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contacto" class="contact">
+    <h2 class="contact-title">Contacta con Nosotros</h2>
+    <div class="contact-container">
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" id="name" name="name" class="form-input" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email" class="form-label">Correo Electrónico</label>
+          <input type="email" id="email" name="email" class="form-input" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea id="message" name="message" class="form-textarea" required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-button">Enviar Mensaje</button>
+      </form>
+      
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <a href="#" class="footer-logo">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          InnovaEmp
+        </a>
+        <p class="footer-description">Innovación y excelencia para empresas modernas</p>
+      </div>
+
+      <div class="footer-section">
+        <h3 class="footer-title">Enlaces Rápidos</h3>
+        <ul class="footer-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3 class="footer-title">Síguenos</h3>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="2" y="9" width="4" height="12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="4" cy="4" r="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="copyright"> 2025 InnovaEmp. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
